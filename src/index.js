@@ -34,7 +34,7 @@ function createNavBtn(number) {
     navBtn.classList.add('radio-btn');
     navBtn.textContent = 'radio_button_unchecked';
     navBtn.dataset.index = index;
-    navBtn.addEventListener('click', (e) => {
+    navBtn.addEventListener('click', () => {
       displaySlide((slideIndex = index + 1));
     });
     radioBtnNavContainer.appendChild(navBtn);
@@ -62,7 +62,3 @@ function render() {
 }
 
 render();
-
-/* <span class="material-symbols-outlined">
-            radio_button_unchecked
-</span> */
